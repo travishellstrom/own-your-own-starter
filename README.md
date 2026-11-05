@@ -6,6 +6,8 @@ A simple website that you own: a clean link page (your photo, your name, a line 
 
 ## Start here (about 10 minutes)
 
+Want to be walked through it, with a preview of your page as you type? Use **[travishellstrom.com/make-your-page](https://travishellstrom.com/make-your-page/)**. It walks you through the same steps.
+
 1. **Make two free accounts** with your personal email (not a work or school one, so the site stays yours if you change jobs): [github.com](https://github.com/signup) and [cloudflare.com](https://dash.cloudflare.com/sign-up).
 2. **Click the orange Deploy to Cloudflare button above.** Sign in to Cloudflare, press **New GitHub connection** and allow it, tick **Create private Git repository**, give your site a name (like `jane-smith`), and press Deploy. Two minutes later you have your own repository and a live address ending in `.workers.dev`.
 3. **Make it yours, no code needed.** In your new repository on GitHub, open **EDIT-ME.txt**, press the pencil, change your name, your line and your links, and press **Commit changes**. Your page updates by itself about a minute later. To add your photo, upload a square picture named `photo.jpg` into the `public` folder.
