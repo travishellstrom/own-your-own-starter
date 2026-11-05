@@ -7,7 +7,7 @@ A simple website that you own: the words live in your GitHub, the site runs free
 ## Start here (about 15 minutes)
 
 1. **Make two free accounts** with your personal email (not a work or school one, so the site stays yours if you change jobs): [github.com](https://github.com/signup) and [cloudflare.com](https://dash.cloudflare.com/sign-up).
-2. **Click the orange Deploy to Cloudflare button above.** Sign in to Cloudflare, let it connect to your GitHub, give your site a name (like `jane-smith`), and press Deploy. Two minutes later you have your own repository and a live address ending in `.workers.dev`.
+2. **Click the orange Deploy to Cloudflare button above.** Sign in to Cloudflare, press **New GitHub connection** and allow it, tick **Create private Git repository**, give your site a name (like `jane-smith`), and press Deploy. Two minutes later you have your own repository and a live address ending in `.workers.dev`.
 3. **Connect Claude to GitHub.** In Claude, open Claude Code (claude.ai/code, or the Code tab in the app) and connect GitHub when it asks. Pick your new repository.
 4. **Paste the prompt in [FIRST-PROMPT.md](FIRST-PROMPT.md).** Claude interviews you and builds your first page from a site you like.
 
