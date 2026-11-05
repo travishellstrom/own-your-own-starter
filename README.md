@@ -19,7 +19,8 @@ When you're happy and want your own domain or want Google to find you, see [LAUN
 
 ## What it costs
 
-- GitHub: free. Cloudflare hosting: free. Claude: Pro is plenty for a site like this.
+- GitHub: free. Cloudflare hosting: free.
+- Claude Pro (about $20 a month) only if you want to make changes by asking Claude. Without it you can still edit any page right on github.com (the pencil button), and it goes live the same way.
 - Your own domain, if you want one: about $10 a year through Cloudflare.
 
 ## What's in here
