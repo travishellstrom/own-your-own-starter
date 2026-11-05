@@ -1,0 +1,10 @@
+{
+  // Your website. Cloudflare publishes the files in public/ every time you push to main.
+  // Your free address is <name>.<your-subdomain>.workers.dev. To use your own domain,
+  // see LAUNCH.md (one line here).
+  "name": "my-site",
+  "compatibility_date": "2025-01-01",
+  "assets": { "directory": "./public", "not_found_handling": "404-page" },
+  "workers_dev": true,
+  "preview_urls": false
+}
