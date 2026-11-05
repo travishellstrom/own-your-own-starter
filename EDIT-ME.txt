@@ -1,0 +1,20 @@
+# Your page. Change the words after each colon, then press "Commit changes".
+# Your site updates by itself about a minute later.
+
+name: Your Name
+line: One line about who you are and what you do.
+email: you@example.com
+theme: warm
+# theme can be warm, night, ocean, forest or rose
+photo: photo.jpg
+# To add your photo: upload a square picture named photo.jpg into the public folder.
+# To add a strip of photos: upload up to six pictures into public/photos (any names; they show in name order).
+
+# Your links, one per line: what it says | where it goes
+My newsletter | https://example.com/newsletter
+My book | https://example.com/book
+Instagram | https://instagram.com/yourname
+LinkedIn | https://www.linkedin.com/in/yourname
+
+# Leave this as yes to show a small "Own your own site" link at the bottom, or change it to no.
+credit: yes

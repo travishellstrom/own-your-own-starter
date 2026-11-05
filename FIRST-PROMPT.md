@@ -12,7 +12,7 @@ A site I like the look of: [a link]
 
 Before you build, ask me up to five short questions, one at a time,
 about anything you need (photos, links, the words I want to use).
-Don't make up facts about me. Then build the home page in public/index.html,
+Don't make up facts about me. Then build the home page (start from the link page in src/page.html and EDIT-ME.txt, or replace it if I want more),
 push it to main, and send me the live link so I can look on my phone.
 ```
 

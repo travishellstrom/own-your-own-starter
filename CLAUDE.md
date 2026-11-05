@@ -3,8 +3,11 @@
 A personal website. The owner edits it by asking Claude. They are not a programmer, so explain things in plain words and never leave them a task in a terminal.
 
 ## How it works
-- `public/` is the site exactly as visitors get it. `public/index.html` is the home page; add a page as `public/<name>/index.html`.
-- Plain HTML and CSS, no framework and no build step. Keep it that way unless the owner asks for something only a framework can do.
+- It starts as a link page. `EDIT-ME.txt` holds the owner's name, line, email, theme, photo and links (`label | url` per line); the owner may edit it on github.com without code, so keep its format simple and its comments plain.
+- `build.js` fills `src/page.html` from EDIT-ME.txt into `public/index.html` before every deploy (wrangler.jsonc `build`). `public/index.html` is generated and gitignored: never edit it, edit EDIT-ME.txt or src/page.html, and run `node build.js` to preview.
+- Everything else in `public/` is served as is: photos, other pages (`public/<name>/index.html`).
+- When the owner outgrows the link page, you may redesign src/page.html, or retire the build: remove the `build` line in wrangler.jsonc and the `public/index.html` line in .gitignore, commit a hand-written public/index.html, and move whatever EDIT-ME.txt held into it (then delete EDIT-ME.txt and build.js and say so in this file).
+- Plain HTML and CSS, no framework. Keep it that way unless the owner asks for something only a framework can do.
 - Every push to `main` goes live by itself: Cloudflare Workers Builds runs `npx wrangler deploy` and the site updates in about a minute. There is nothing else to run.
 
 ## Working with the owner

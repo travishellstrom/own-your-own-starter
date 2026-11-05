@@ -4,6 +4,8 @@
   // see LAUNCH.md (one line here).
   "name": "my-site",
   "compatibility_date": "2025-01-01",
+  // Before each deploy, build.js turns EDIT-ME.txt into public/index.html.
+  "build": { "command": "node build.js" },
   "assets": { "directory": "./public", "not_found_handling": "404-page" },
   "workers_dev": true,
   "preview_urls": false

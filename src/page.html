@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Built from EDIT-ME.txt by build.js: edit those, not public/index.html. -->
+<!-- Hidden from search until launch (see LAUNCH.md). -->
+<meta name="robots" content="noindex, nofollow">
+<title>{{NAME}}</title>
+<meta name="description" content="{{LINE}}">
+<meta name="theme-color" content="{{BG}}">
+<meta property="og:title" content="{{NAME}}">
+<meta property="og:description" content="{{LINE}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='{{ACCENT_URL}}'/%3E%3C/svg%3E">
+<style>
+:root{--bg:{{BG}};--ink:{{INK}};--sub:{{SUB}};--accent:{{ACCENT}};--card:{{CARD}}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:max(56px,env(safe-area-inset-top)) 20px 56px;text-align:center}
+.avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 20px;box-shadow:0 0 0 4px var(--card),0 6px 24px rgba(0,0,0,.12)}
+.initials{display:grid;place-items:center;background:var(--accent);color:var(--card);font:600 42px/1 Georgia,serif;letter-spacing:.02em}
+h1{font:600 clamp(30px,8vw,38px)/1.1 Georgia,"Times New Roman",serif;margin:0 0 10px;letter-spacing:-.01em}
+.line{color:var(--sub);margin:0 auto 30px;max-width:420px}
+ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.link{position:relative;display:block;padding:17px 52px;border-radius:14px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);box-shadow:0 1px 2px rgba(0,0,0,.05);transition:transform .15s,border-color .15s,box-shadow .15s}
+.link:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.ic{position:absolute;left:18px;top:50%;width:22px;height:22px;margin-top:-11px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 28px}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block;background:color-mix(in srgb,var(--ink) 8%,transparent)}
+.photos.n1{grid-template-columns:1fr}.photos.n1 img{aspect-ratio:3/2}
+.photos.n2,.photos.n4{grid-template-columns:repeat(2,1fr)}
+@media (max-width:480px){.photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px 28px;padding:0 20px;scrollbar-width:none}.photos::-webkit-scrollbar{display:none}.photos img{flex:0 0 58%;scroll-snap-align:center}.photos.n1 img{flex-basis:100%}}
+.link:focus-visible,.email:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.email{display:inline-block;margin-top:26px;padding:12px 26px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.email:hover{filter:brightness(1.08)}
+.credit{margin:44px 0 0;font-size:13px}
+.credit a{color:var(--sub);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--sub) 40%,transparent)}
+@media (prefers-reduced-motion:reduce){.link{transition:none}.link:hover{transform:none}}
+</style>
+</head>
+<body>
+<main>
+  {{AVATAR}}
+  <h1>{{NAME}}</h1>
+  <p class="line">{{LINE}}</p>
+  {{PHOTOS}}
+  <ul>
+      {{LINKS}}
+  </ul>
+  {{EMAIL}}
+  {{CREDIT}}
+</main>
+</body>
+</html>
